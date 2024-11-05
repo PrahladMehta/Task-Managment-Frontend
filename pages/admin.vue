@@ -2,15 +2,15 @@
   <div class="min-h-screen bg-gray-100">
     <header class="bg-white shadow">
       <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-        <h1 class="text-3xl font-bold text-gray-900">Task Management(Admin)</h1>
+        <h1 class="text-sm font-bold text-gray-900 sm:text-3xl ">Task Management(Admin)</h1>
         <div class="flex items-center space-x-4">
           <div v-if="profile" class="flex items-center space-x-2">
             <img src="../public/avatar_cs1vpz.png" alt="Profile" class="w-8 h-8 rounded-full">
             <span class="text-sm font-medium text-gray-700">{{ profile.firstname }} {{ profile.lastname }}</span>
           </div>
-          <button @click="logout" class="flex items-center space-x-2 p-2 rounded-full hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
-            <LogOutIcon class="h-5 w-5 text-gray-600" />
-            <span class="text-sm font-medium text-gray-700">Logout</span>
+          <button @click="logout"  class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+            <LogOutIcon class="h-5 w-5 text-white" />
+            <span class="text-sm font-medium text-white hidden sm:flex">Logout</span>
           </button>
         </div>
       </div>

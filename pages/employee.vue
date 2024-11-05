@@ -2,7 +2,7 @@
   <div class="min-h-screen bg-gray-100">
     <header class="bg-white shadow">
       <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-        <h1 class="text-3xl font-bold text-gray-900">My Tasks </h1>
+        <h1 class="text-xl font-bold text-gray-900 lg:text-3xl">My Tasks </h1>
         <div class="flex items-center space-x-4" v-if="user">
           <img src="../public/avatar_cs1vpz.png" :alt="`${user.firstname} ${user.lastname}`" class="h-8 w-8 rounded-full object-cover">
           <span class="text-sm font-medium text-gray-700">{{ user.firstname }} {{ user.lastname }}</span>
@@ -11,7 +11,7 @@
             class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
           >
             <LogOutIcon class="h-4 w-4 mr-2" />
-            Logout
+              <p class="hidden  sm:flex">Logout</p>
           </button>
         </div>
       </div>

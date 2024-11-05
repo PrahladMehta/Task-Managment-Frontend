@@ -2,7 +2,7 @@
   <div class="min-h-screen bg-gray-100">
     <header class="bg-white shadow">
       <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-        <h1 class="text-3xl font-bold text-gray-900">Assign Tasks (Manager)</h1>
+        <h1 class="text-xl font-bold text-gray-900 sm:text-3xl">Assign Tasks (Manager)</h1>
         <div class="flex items-center space-x-4">
           <div v-if="profile" class="flex items-center space-x-2">
             <img src="../public/avatar_cs1vpz.png" :alt="profile.firstname" class="h-8 w-8 rounded-full object-cover">
@@ -13,7 +13,9 @@
             class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
           >
             <LogOutIcon class="h-4 w-4 mr-2" />
-            Logout
+
+            <p class="hidden sm:flex"> Logout</p>
+           
           </button>
         </div>
       </div>
